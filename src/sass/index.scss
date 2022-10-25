@@ -1,3 +1,21 @@
 @import './common';
 @import './example';
+
+// змінні та базові стилі
+@import './base/variables';
+@import './base/base';
+
+// Допоміжні класи
+@import './utils/aux';
+
+// Головні секції
+@import './layouts/header';
+
+// Компоненти
+@import './components/logo';
+@import './components/menu-open';
+@import './components/order';
+@import './components/menu';
+
 @import './basic-styles';
+
