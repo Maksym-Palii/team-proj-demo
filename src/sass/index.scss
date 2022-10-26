@@ -9,6 +9,7 @@
 
 // Головні секції
 @import './layouts/header';
+@import './layouts/hero';
 
 // Компоненти
 @import './components/logo';
@@ -16,4 +17,8 @@
 @import './components/order';
 @import './components/menu';
 
-@import './basic-styles';
+
+// Класи Макса
+@import './breakpoints';
+@import './container';
+@import './section';
