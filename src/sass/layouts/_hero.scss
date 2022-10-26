@@ -1,37 +1,97 @@
-// Колір в hero задав тимчасово, щоб бачити контур секції
-.hero{
+.hero__section {
+    // Колір в hero задав тимчасово, щоб бачити контур секції
     background-color: whitesmoke;
+
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    @media screen and (min-width:$tablet) {
+        padding-bottom: 0;
+    }
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 }
 
-.hero .container {
-    display: flex;
-    padding: 14px 14px 14px 0;
-    
+.hero__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+
+    max-width: $mobile;
+
+    @media screen and (min-width:$tablet) {
+            position: relative;   
+
+            padding-left: 32px;
+            padding-right: 32px;
+
+            max-width: $tablet;
+        }
+
+    @media screen and (min-width:$desktop) {
+        display: flex;
+        padding-left: 14px;
+        padding-right: 14px;
+
+        max-width: $desktop;
+    }
 }
+
 
 .blok__hero{
-    margin-top: 159px;
+    
+    @media screen and (min-width:$desktop){
+        margin-top: 159px;
+    }
 }
 
 .hero__title{
-    
     margin-bottom: 28px;
-    max-width: 500px;
 
     font-weight: 700;
-    font-size: 48px;
-    line-height: 1.2;
+    font-size: 28px;
+    line-height: 1.18;
     color: #2C2C2C;
+
+    @media screen and (min-width:$tablet){
+        margin-bottom: 44px;
+        max-width: 540px;
+
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 28px;
+        max-width: 500px;
+           
+        font-size: 48px;
+    }
 }
 
 .hero__text{
-    margin-bottom: 40px;
-    max-width: 500px;
-
+    margin-bottom: 28px;
+      
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
-    color: #2C2C2C;
+    color: #2C2C2C; 
+
+    @media screen and (min-width:$tablet){
+        margin-bottom: 40px;
+        max-width: 340px;
+
+        font-size: 16px;
+    }
+    
+    @media screen and (min-width:$desktop){
+        max-width: 500px;
+
+    }
 }
 
 .hero__btn{
@@ -40,21 +100,46 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 1.5;
-    text-align: right;
     color: #2C2C2C;
     background-color: #BBF330;
     border-radius: 30px;
     border: none;
+
+    @media screen and (min-width:$tablet) {
+        margin-bottom: 73px;
+    }
+}
+
+
+.hero__picture{
+    @media screen and (min-width:$tablet) and (max-width:1279px){
+        position: absolute;
+        right: 32px;
+        bottom: 0;
+    }
+
+    @media screen and (min-width:$desktop){
+        position: static;
+        margin-left: auto;
+        padding: 14px 14px 14px;
+    }
 }
 
 .hero__img{
-    margin-left: auto;
-   
-    border: 26px solid #FFE550;;
-    border-radius: 50%;
- 
+    display: none;
+
+    @media screen and (min-width:$tablet) {
+        display: block;
+        border: 14px solid #FFE550;
+        border-radius: 50%;
+    }
+
+    @media screen and (min-width:$desktop) {
+
+        border: 26px solid #FFE550;
+    }
 }
 
-// *{
-// outline: 1px solid tomato;
-// }
+*{
+outline: 1px solid tomato;
+}
